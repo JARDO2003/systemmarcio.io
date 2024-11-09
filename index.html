@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan du Site Éducatif</title>
+    <style>
+        /* Style général */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('image/i7.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            color: #333;
+        }
+
+        /* Style du header */
+        header {
+            background-color: rgba(44, 62, 80, 0.8);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 28px;
+            letter-spacing: 2px;
+        }
+
+        /* Style de la navigation */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(41, 128, 185, 0.8);
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 10px 20px;
+            margin: 0 10px;
+            background-color: rgba(52, 152, 219, 0.8);
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        nav a:hover {
+            background-color: rgba(26, 188, 156, 0.8);
+            transform: translateY(-3px);
+        }
+
+        /* Style des sections */
+        .levels-container {
+            text-align: center;
+            margin: 50px 5%;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 15px;
+        }
+
+        .levels-container h2 {
+            color: #ecf0f1;
+            margin-bottom: 20px;
+            font-size: 24px;
+            text-transform: uppercase;
+        }
+
+        /* Grille des items */
+        .secondary-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 20px;
+            margin: 20px 5%;
+        }
+
+        /* Style des items */
+        .grid-item {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .grid-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .grid-item a {
+            text-decoration: none;
+            color: #2980b9;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        /* Style des images */
+        .image-container {
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        .image-container img {
+            max-width: 90%;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Style de la vidéo */
+        .video-container {
+            margin: 20px 5%;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            header {
+                font-size: 24px;
+            }
+
+            nav a {
+                font-size: 14px;
+                padding: 8px 16px;
+            }
+
+            .levels-container h2 {
+                font-size: 20px;
+            }
+
+            .grid-item {
+                padding: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                font-size: 20px;
+            }
+
+            nav {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        Bienvenue sur notre site
+    </header>
+    <header>
+        Explorez notre gallery de sujet
+    </header>
+    <nav>
+        <a href="apropos.html">À propos</a>
+        <a href="contact.html">Contact</a>
+        <a href="assistant.html">Assistant</a>
+    </nav>
+
+    <section class="levels-container">
+        <h2>Secondaire (Gestion)</h2>
+        <div class="secondary-container">
+            <div class="grid-item"><a href="2nde G.html">2nde Gestion</a></div>
+            <div class="grid-item"><a href="1ère G.html">1ère Gestion</a></div>
+            <div class="grid-item"><a href="Terminale G.html">Terminale Gestion</a></div>
+        </div>
+        <div class="image-container">
+            <img src="image/WhatsApp Image 2024-10-20 à 11.48.25_02b16af9.jpg" alt="Image Gestion">
+        </div>
+    </section>
+
+    <section class="levels-container">
+        <h2>Secondaire (Série D)</h2>
+        <div class="secondary-container">
+            <div class="grid-item"><a href="2nd D.html">2nde Série D</a></div>
+            <div class="grid-item"><a href="1ère D.html">1ère Série D</a></div>
+            <div class="grid-item"><a href="Terminale D.html">Terminale Série D</a></div>
+        </div>
+        <div class="image-container">
+            <img src="image/i7.jpg" alt="Image Série D">
+        </div>
+    </section>
+
+    <section class="levels-container">
+        <h2>LICENCE</h2>
+        <div class="secondary-container">
+            <div class="grid-item"><a href="l1.html">1ère année</a></div>
+            <div class="grid-item"><a href="l2.html">2ème année</a></div>
+            <div class="grid-item"><a href="l3.html">3ème année</a></div>
+        </div>
+        <div class="image-container">
+            <img src="image/i1.jpg" alt="Image Licence">
+        </div>
+    </section>
+
+    <section class="levels-container">
+        <h2>MASTER</h2>
+        <div class="secondary-container">
+            <div class="grid-item"><a href="master1.html">MASTER 1</a></div>
+            <div class="grid-item"><a href="master2.html">MASTER 2</a></div>
+        </div>
+        <div class="image-container">
+            <img src="image/i3.jpg" alt="Image Master">
+        </div>
+    </section>
+
+    <section class="levels-container">
+        <h2>BTS</h2>
+        <div class="secondary-container">
+            <div class="grid-item"><a href="1èrebts.html">1ère année</a></div>
+            <div class="grid-item"><a href="2èmebts.html">2ème année</a></div>
+        </div>
+        <div class="image-container">
+            <img src="image/i2.jpg" alt="Image BTS">
+        </div>
+    </section>
+    
+    <header>
+        Ensemble parlons l'anglais 
+    </header>
+
+    <section class="video-container">
+        <video width="100%" autoplay muted loop playsinline>
+            <source src="vidéos/l.mp4" type="video/mp4">
+            Votre navigateur ne prend pas en charge la lecture des vidéos.
+        </video>
+    </section>
+
+</body>
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan du Site Éducatif</title>
+    <style>
+        /* Style général */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('image/i7.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            color: #333;
+        }
+
+        /* Style du header */
+        header {
+            background-color: rgba(44, 62, 80, 0.8);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 28px;
+            letter-spacing: 2px;
+        }
+
+        /* Style de la navigation */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(41, 128, 185, 0.8);
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 10px 20px;
+            margin: 0 10px;
+            background-color: rgba(52, 152, 219, 0.8);
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        nav a:hover {
+            background-color: rgba(26, 188, 156, 0.8);
+            transform: translateY(-3px);
+        }
+
+        /* Style des sections */
+        .levels-container {
+            text-align: center;
+            margin: 50px 5%;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 15px;
+        }
+
+        .levels-container h2 {
+            color: #ecf0f1;
+            margin-bottom: 20px;
+            font-size: 24px;
+            text-transform: uppercase;
+        }
+
+        /* Grille des items */
+        .secondary-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 20px;
+            margin: 20px 5%;
+        }
+
+        /* Style des items */
+        .grid-item {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .grid-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .grid-item a {
+            text-decoration: none;
+            color: #2980b9;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        /* Style des images */
+        .image-container {
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        .image-container img {
+            max-width: 90%;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Style de la vidéo */
+        .video-container {
+            margin: 20px 5%;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Style du formulaire de commentaires */
+        .comment-section {
+            margin: 50px 5%;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .comment-section h3 {
+            color: #333;
+            font-size: 24px;
+        }
+
+        .comment-section textarea {
+            width: 90%;
+            height: 100px;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        .comment-section button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #2980b9;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .comment-section button:hover {
+            background-color: #3498db;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            header {
+                font-size: 24px;
+            }
+
+            nav a {
+                font-size: 14px;
+                padding: 8px 16px;
+            }
+
+            .levels-container h2 {
+                font-size: 20px;
+            }
+
+            .grid-item {
+                padding: 15px;
+            }
+
+            .comment-section textarea {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                font-size: 20px;
+            }
+
+            nav {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Contenu existant du site -->
+
+    <section class="comment-section">
+        <h3>Vos Commentaires</h3>
+        <textarea id="comment" placeholder="Écrivez votre commentaire ici..."></textarea>
+        <br>
+        <button onclick="sendToWhatsApp()">Soumettre</button>
+    </section>
+
+    <script>
+        function sendToWhatsApp() {
+            var comment = document.getElementById('comment').value;
+            if (comment) {
+                var phone = "+2290172369840"; // Remplacez par le numéro du propriétaire avec le code pays (sans le '+')
+                var url = "https://wa.me/" + phone + "?text=" + encodeURIComponent(comment);
+                window.open(url, "_blank");
+            } else {
+                alert("Veuillez entrer un commentaire avant de soumettre.");
+            }
+        }
+    </script>
+
+</body>
+
+</html>
+<head>
+    <!-- Autres balises meta -->
+    <link rel="manifest" href="/manifest.json">
+    <link rel="icon" type="image/png" sizes="192x192" href="/icons/icon-192x192.png">
+    <meta name="theme-color" content="#2980b9">
+</head>
+<link rel="manifest" href="manifest.json">
+
+
+<script>
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('service-worker.js')
+                .then((registration) => {
+                    console.log('Service Worker enregistré avec succès:', registration);
+                })
+                .catch((error) => {
+                    console.log('L\'enregistrement du Service Worker a échoué:', error);
+                });
+        });
+    }
+</script>

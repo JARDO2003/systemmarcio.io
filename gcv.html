@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filière GCV</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: url('image/i3.jpg') no-repeat center center fixed; /* Ajoute l'image d'arrière-plan */
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6); /* Opacité pour rendre le contenu plus lisible */
+        }
+
+        .container {
+            position: relative;
+            z-index: 1;
+            background-color: rgba(255, 255, 255, 0.9); /* Légère transparence */
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            width: 80%;
+            max-width: 1000px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+
+        .subjects {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .column {
+            flex: 1;
+            min-width: 200px;
+            padding: 20px;
+            background-color: #f7f7f7;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .column h3 {
+            color: #0d1823;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        .subject a {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 16px;
+            color: #333;
+            text-decoration: none;
+            padding: 8px;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .subject a:hover {
+            background-color: #010d18;
+            color: #fff;
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .container {
+                width: 95%; /* Plus de largeur pour petits écrans */
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            .subjects {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .column {
+                width: 100%;
+                padding: 15px;
+            }
+
+            .subject a {
+                font-size: 14px; /* Ajuste la taille de police pour petit écran */
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 20px;
+            }
+
+            .column h3 {
+                font-size: 18px;
+            }
+
+            .subject a {
+                font-size: 12px; /* Réduction de la taille pour les très petits écrans */
+            }
+
+            .container {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="overlay"></div>
+
+    <div class="container">
+        <h1>Filière SEG - Liste des Matières</h1>
+        <div class="subjects">
+            <!-- Colonne 1 -->
+            <div class="column">
+                <h3>Matières Générales</h3>
+                <div class="subject"><a href="economie.html">Économie</a></div>
+                <div class="subject"><a href="maths.html">Droit</a></div>
+                <div class="subject"><a href="anglais.html">Anglais</a></div>
+                <div class="subject"><a href="comptaN1.html">Compta 1</a></div>
+                <div class="subject"><a href="compta2.html">Compta 2</a></div>
+                <div class="subject"><a href="micro.html">Micro-économie</a></div>
+            </div>
+            
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
